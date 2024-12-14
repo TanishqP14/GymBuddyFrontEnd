@@ -1,15 +1,15 @@
 import { StyleSheet, Text, View, Image, Dimensions, Pressable} from 'react-native';
 import * as Font from 'expo-font';
 
-const headerImage = require("C:/Users/tanis/OneDrive/Desktop/ReactNative/GymBuddyFrontEnd/assets/Images/wsSecond.png");
+const headerImage = require("../assets/Images/wsSecond.png");
 const {width, height} = Dimensions.get('window');
 
 
 export default function WelcomeSceneSec({navigation}) {
 
   const [fontsLoaded] = Font.useFonts({
-    'Lexend-Bold': require('C:/Users/tanis/OneDrive/Desktop/ReactNative/GymBuddyFrontEnd/assets/Fonts/Lexend/Lexend-Bold.ttf'),
-    'Lexend': require('C:/Users/tanis/OneDrive/Desktop/ReactNative/GymBuddyFrontEnd/assets/Fonts/Lexend/Lexend-Regular.ttf')
+    'Lexend-Bold': require('../assets/Fonts/Lexend/Lexend-Bold.ttf'),
+    'Lexend': require('../assets/Fonts/Lexend/Lexend-Regular.ttf')
   });
 
   return (
