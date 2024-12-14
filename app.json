@@ -26,7 +26,7 @@
     },
     "fonts": {
       "Lexend-Bold": "./assets/Fonts/Lexend/Lexend-Bold.ttf",
-      "Lexend": ".assets/Fonts/Lexend/Lexend-Black.ttf"
+      "Lexend": ".assets/Fonts/Lexend/Lexend-Regular.ttf"
     }
   }
 }
