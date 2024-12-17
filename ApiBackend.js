@@ -1,6 +1,6 @@
 class ApiService {
-    constructor(baseUrl) {
-      this.baseUrl = baseUrl; // Base URL for API endpoints
+    constructor() {
+      this.baseUrl = "http://localhost:8000/api/"; // Base URL for API endpoints
       this.headers = {
         "Content-Type": "application/json",
       };
@@ -34,43 +34,41 @@ class ApiService {
   
     // Login API call
     async login(email, password) {
-      const endpoint = "/auth/login";
+      const endpoint = "login/";
       const body = { email, password };
       return await this.post(endpoint, body);
     }
   
     // Refresh Access Token API call
     async refreshAccessToken(refreshToken) {
-      const endpoint = "/auth/refresh-token";
+      const endpoint = "token/refresh/";
       const body = { refresh_token: refreshToken };
       return await this.post(endpoint, body);
     }
   
     // Sign In (Register) API call
     async signIn(name, email, password) {
-      const endpoint = "/auth/sign-up";
+      const endpoint = "register/";
       const body = { name, email, password };
       return await this.post(endpoint, body);
     }
   
     // Verify Email API call
     async verifyEmail(email) {
-      const endpoint = "/auth/verify-email";
+      const endpoint = "verify-email/";
       const body = { email };
       return await this.post(endpoint, body);
     }
   
     // Verify OTP API call
     async verifyOTP(email, otp) {
-      const endpoint = "/auth/verify-otp";
+      const endpoint = "verify-otp/";
       const body = { email, otp };
       return await this.post(endpoint, body);
     }
   }
   
-  // Example usage:
-  const api = new ApiService("https://api.example.com");
-  
+  // Example usage:  
   // Example function calls (replace with actual input values)
   // api.login("user@example.com", "password123").then(console.log).catch(console.error);
   // api.refreshAccessToken("your_refresh_token").then(console.log).catch(console.error);
