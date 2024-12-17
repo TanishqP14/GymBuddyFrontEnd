@@ -27,7 +27,7 @@ export default function WelcomeSceneSec({navigation}) {
         <View style={welcomeStyles1.dots}></View>
       </View>
       <View>
-        <Pressable style={({pressed}) => [welcomeStyles1.startedButton, {backgroundColor: pressed ? '#334A66' : '#1A78E5'}]}>
+        <Pressable style={({pressed}) => [welcomeStyles1.startedButton, {backgroundColor: pressed ? '#334A66' : '#1A78E5'}]} onPress={() => navigation.navigate('signUp')}>
           <Text style={{fontSize: 18, color: 'white', fontWeight: 'bold', fontFamily: 'Lexend'}}>
             Sign Up with GT email
           </Text>
