@@ -3,7 +3,7 @@ import * as Font from 'expo-font';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { useEffect, useState } from "react";
 
-const logo = require("./assets/Images/Logo.png");
+const logo = require("../assets/Images/Logo.png");
 const {width, height} = Dimensions.get("window");
 
 export default function SignUp() {
@@ -31,8 +31,8 @@ export default function SignUp() {
     }
 
     const [fontsLoaded] = Font.useFonts({
-        'Lexend-Bold': require('./assets/Fonts/Lexend/Lexend-Bold.ttf'),
-        'Lexend': require('./assets/Fonts/Lexend/Lexend-Regular.ttf')
+        'Lexend-Bold': require('../assets/Fonts/Lexend/Lexend-Bold.ttf'),
+        'Lexend': require('../assets/Fonts/Lexend/Lexend-Regular.ttf')
     });
 
     return (

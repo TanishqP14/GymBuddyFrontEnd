@@ -2,7 +2,7 @@ import WelcomeSceneFirst from "./WelcomeScene/WelcomeSceneFirst.js";
 import WelcomeSceneSec from "./WelcomeScene/WelcomeSceneSec.js";
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {NavigationContainer} from '@react-navigation/native';
-import SignUp from "./SignUp.js";
+import SignUp from "./AuthScene/SignUp.js";
 
 
 const Stack = createNativeStackNavigator();
