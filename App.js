@@ -3,6 +3,7 @@ import WelcomeSceneSec from "./WelcomeScene/WelcomeSceneSec.js";
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {NavigationContainer} from '@react-navigation/native';
 import SignUp from "./AuthScene/SignUp.js";
+import LogIn from "./AuthScene/LogIn.js";
 
 
 const Stack = createNativeStackNavigator();
@@ -20,7 +21,10 @@ export default function App() {
           component={WelcomeSceneSec} />
         <Stack.Screen name="signUp"
           component={SignUp}/>
+          <Stack.Screen name="logIn"
+          component={LogIn}/>
       </Stack.Navigator>
     </NavigationContainer>
+   
   )
 }

@@ -32,7 +32,8 @@ export default function WelcomeSceneSec({navigation}) {
             Sign Up with GT email
           </Text>
         </Pressable>
-        <Pressable style={({pressed}) => [welcomeStyles1.startedButton, {backgroundColor: pressed ? '#334A66' : '#486586', marginTop: 20}]}>
+        <Pressable style={({pressed}) => [welcomeStyles1.startedButton, {backgroundColor: pressed ? '#334A66' : '#486586', marginTop: 20}]}
+          onPress={() => navigation.navigate("logIn")}>
           <Text style={{fontSize: 18, color: 'white', fontWeight: 'bold', fontFamily: 'Lexend'}}>
             Already have an account? Log IN
           </Text>
@@ -47,7 +48,6 @@ const welcomeStyles1 = StyleSheet.create({
     flex: 1,
     backgroundColor: '#121A21',
     alignItems: 'center',
-    justifyContent: 'center',
     justifyContent: "flex-start",
   },
   image: {
